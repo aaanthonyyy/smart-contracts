@@ -16,21 +16,37 @@ input[type=search]{
 
 .search{
     
-   border: 10px red bold 
-   ;
+   border: 10px red bold;
    background-color: black;
     text-align: right;
 
 }
 button{ 
+    text-align: center;
     background-color:greenyellow;
     padding: 40px 40px;
-    margin: 8px 0;
+    margin: 8px 0px;
     border: none;
     cursor: pointer;
-    width: 20%;
     border-radius: 10px;
+    width: 80%;
 }
+
+.button button{
+    margin: 0px 10px;
+
+}
+
+.button button:hover{
+    background-color: rgb(178, 223, 111);
+}
+
+.Button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+}
+
 
 
 button:hover {

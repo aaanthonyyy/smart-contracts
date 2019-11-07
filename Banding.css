@@ -1,0 +1,62 @@
+body{
+    background-image: url("Assets/Backdrop1.jpg");
+
+}
+
+input[type=search]{
+    color: white;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%; 
+    vertical-align: 100%;
+    border-radius: 10px;
+}
+
+.search{
+    
+   border: 10px red bold;
+   background-color: black;
+    text-align: right;
+
+}
+button{ 
+    text-align: center;
+    background-color:greenyellow;
+    padding: 40px 40px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.button button{
+    margin: 0px 10px;
+
+}
+
+.button button:hover{
+    background-color: rgb(178, 223, 111);
+}
+
+.Button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+}
+
+
+
+button:hover {
+        cursor: pointer;
+    }
+
+ .button2{
+     text-align: top right;
+ }   
+
+
+
+

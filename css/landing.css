@@ -2416,7 +2416,7 @@
     text-align: center;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
+    box-shadow: 0px 10px 30px 0px rgba(195, 177, 95, 0.281);
   }
   
   .single-product .thumb {
@@ -2426,7 +2426,7 @@
   
   .single-product .details {
     padding: 20px;
-    background-color: #f9f9ff;
+    background-color: rgba(91, 166, 159, 0.089);
   }
   
   .single-product .details h4 {
@@ -2445,9 +2445,9 @@
     cursor: pointer;
   }
   
-  .single-product:hover .details .primary-btn {
-    color: #fff !important;
-  }
+  /* .single-product:hover .details .primary-btn {
+    background-color: #F9F7EF;
+  } */
   
   @media (max-width: 960px) {
     .single-product {

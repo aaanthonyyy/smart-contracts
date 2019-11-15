@@ -27,6 +27,7 @@
 
 	<link rel="stylesheet" href="css/landing.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/extra.css">
 </head>
 
 <body>
@@ -156,16 +157,37 @@
 		<div class="modal-dialog">
 
 			<!-- New request content-->
+			<form action="/action_page.php" method="post">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h4 class="modal-title">Add New Request</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
-					<p>Placeholder until we know what fields are required</p>
+                       
+                     <div class="Request1">
+					
+					<input type="text" class="itemtype" placeholder="Enter item" required>
+					
+					 
+					 
+					<input type="number" class="Price" placeholder="Enter Price" required>
+
+
+					<input type="text" class="owner" placeholder="Enter Company/Recepient" required>
+                     </div>
+					
+					<textarea message="Details" rows=10 column=30 placeholder="Enter Details/Specifications" required></textarea>
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+				<button type="submit" data-target="modal"  class="btn btn-default" required>CONFIRM</button>
+
+				</div>
+
+				<div class="modal-footer">	
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 				</div>
 			</div>
 
@@ -184,10 +206,34 @@
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
 					<div class="modal-body">
-						<p>Placeholder until we know what fields are required</p>
+
+
+
+							<div class="Request1">
+					
+									<input type="number" class="itemtype" placeholder="Enter item ID" required>
+									
+									 
+									<input type="text" class="owner" placeholder="Enter Company/Recepient" required>
+									 
+									<input type="number" class="Price" placeholder="Enter Price Offer" required>
+				
+				
+									 </div>
+									
+									
+								</div>
+								<div class="modal-footer">
+				
+								<button type="submit" data-target="modal"  class="btn btn-default" required>CONFIRM</button>
+				
+								</div>
+				
+
+
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 					</div>
 				</div>
 	

@@ -1,0 +1,35 @@
+button:hover{
+     color: blue;
+
+
+}
+
+button {
+    border-radius: 10px;
+    text-align: end;
+}
+
+input[type=text], input[text=number]{
+border-radius: 10px;
+box-sizing: border-box;
+display: inline-block;
+margin: 10px;
+
+}
+
+input[type=number]{
+
+ border-radius: 10px;
+box-sizing: border-box;
+display: inline-block;
+margin: 10px;
+}
+
+textarea{
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px;
+
+
+}

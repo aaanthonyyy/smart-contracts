@@ -1,3 +1,11 @@
+*{
+  --teal: #5BA69F;
+  --gold: #C3B15F;
+}
+
+body{
+  background-color: #F3F8F8;
+}
 
 
 .Title{
@@ -24,4 +32,45 @@
     /* Add a grey background color to the table header and on hover */
     background-color: #f1f1f1;
   }
+
+  .card {
+    border: none;
+    -webkit-box-shadow: 1px 0 20px rgba(96,93,175,.05);
+    box-shadow: 1px 0 20px rgba(96,93,175,.05);
+    margin-bottom: 30px;
+}
+
+
+.table th {
+    font-weight: 500;
+    color: var(--teal);
+    font-weight: bold;
+}
+.table thead {
+    background-color: #F3F8F8;
+}
+.table>tbody>tr>td, .table>tfoot>tr>td, .table>thead>tr>td {
+    padding: 14px 12px;
+    vertical-align: middle;
+}
+.table tr td {
+    color: #222222;
+}
+.thumb-sm {
+    height: 32px;
+    width: 32px;
+}
+.badge-soft-warning {
+    background-color: #f8c95533;
+    color: #f8c955;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+.badge-soft-primary {
+    background-color: #F3F8F8;
+    color: var(--teal);
+}
  

@@ -1,8 +1,13 @@
 // import { createServer } from 'http';
 let http = require('http');
+let web3 = require('web3');
 let express = require('express')
 let app = express();
 
+var web3_server = new Web3(Web3.givenProvider || "ws://localhost:6969");
+
+
+/* Middleware & Static Files */
 app.set('view engine', 'ejs');
 app.use('/css', express.static('css'));
 app.use('/css', express.static('../'));
@@ -27,5 +32,5 @@ app.get('/history.html', function(request, response){
     response.render('../History');
 });
 
-app.listen(3000);
+app.listen(6969);
 console.log('we out dea');

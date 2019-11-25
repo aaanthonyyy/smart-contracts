@@ -26,6 +26,10 @@ app.get(['/index.html', '/'], function(request, response){
     response.sendFile(__dirname + '/index.html');
 });
 
+app.post('/index.html', urlencodedParser, function(request, response){
+    response.sendFile(__dirname + '/landing.html');
+});
+
 app.get(['/landing.html', '/home.html'], function(request, response){
     response.sendFile(__dirname + '/landing.html');
 });

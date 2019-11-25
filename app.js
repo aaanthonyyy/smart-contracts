@@ -4,7 +4,7 @@ let web3 = require('web3');
 let express = require('express')
 let app = express();
 
-var web3_server = new Web3(Web3.givenProvider || "ws://localhost:6969");
+//var web3_server = new Web3(Web3.givenProvider || "ws://localhost:6969");
 
 
 /* Middleware & Static Files */

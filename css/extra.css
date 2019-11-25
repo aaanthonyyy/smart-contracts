@@ -14,22 +14,39 @@ border-radius: 10px;
 box-sizing: border-box;
 display: inline-block;
 margin: 10px;
-
+border: none;
+background-color: #f5f5f5;
+padding: 10px 10px;
 }
 
 input[type=number]{
-
- border-radius: 10px;
+border-radius: 10px;
 box-sizing: border-box;
 display: inline-block;
 margin: 10px;
+border: none;
+background-color: #f5f5f5;
+padding: 10px 10px;
 }
 
 textarea{
     border-radius: 10px;
     box-sizing: border-box;
-    display: inline-block;
     margin: 10px;
+    border: none;
+    background-color: #f5f5f5;
+    padding: 10px 10px;
+    width: 95%;
+}
 
+.owner{
+    width: 95%;
+}
 
+.cancel{
+    color: #5BA69F;
+    background: none;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
 }

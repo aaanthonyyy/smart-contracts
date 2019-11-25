@@ -13,7 +13,7 @@
 	<title>Blockchain Etereum</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/659060c25c.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/659060c25c.js" crossorigin="anonymous"></script>
 	<!--
 		CSS
 			============================================= -->
@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="css/hexagons.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
-	
+
 	<link rel="stylesheet" href="css/landing.css">
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/extra.css">
@@ -100,7 +100,8 @@
 							<p>
 								Send request for inventory items
 							</p>
-							<a href="#" class="primary-btn text-uppercase" data-toggle="modal" data-target="#newRequest">View Details</a>
+							<a href="#" class="primary-btn text-uppercase" data-toggle="modal"
+								data-target="#newRequest">View Details</a>
 						</div>
 					</div>
 				</div>
@@ -114,7 +115,8 @@
 							<p>
 								Start a new transaction privately
 							</p>
-							<a href="#" class="primary-btn text-uppercase" data-toggle="modal" data-target="#newOffer">View Details</a>
+							<a href="#" class="primary-btn text-uppercase" data-toggle="modal"
+								data-target="#newOffer">View Details</a>
 						</div>
 					</div>
 				</div>
@@ -158,88 +160,65 @@
 		<div class="modal-dialog">
 
 			<!-- New request content-->
-			<form action="/action_page.php" method="post">
+			<form action="/home" method="post" id="request-form">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Add New Request</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="Request1">
+							<input type="text" class="itemtype" placeholder="Enter item" name="item" required>
+							<input type="number" class="Price" placeholder="Enter Price" name="price" required>
+							<input type="text" class="owner" placeholder="Enter Company/Recepient" name="company"
+								required>
+							<textarea message="Details" rows=10 column=50 placeholder="Enter Details/Specifications"
+								name="details"></textarea>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-default" data-target="modal"
+							value="Submit">CONFIRM</button>
+						<button type="button" class="cancel" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- End modal for new request -->
+
+
+	<!-- Modal for New Offer -->
+	<div class="modal fade" id="newOffer" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- New request content-->
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Add New Request</h4>
+					<h4 class="modal-title">Add New Offer</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
-                       
-                     <div class="Request1">
-					
-					<input type="text" class="itemtype" placeholder="Enter item" required>
-					
-					 
-					 
-					<input type="number" class="Price" placeholder="Enter Price" required>
-
-
-					<input type="text" class="owner" placeholder="Enter Company/Recepient" required>
-                     </div>
-					
-					<textarea message="Details" rows=10 column=30 placeholder="Enter Details/Specifications" required></textarea>
-
-				</div>
-				<div class="modal-footer">
-
-				<button type="submit" data-target="modal"  class="btn btn-default" required>CONFIRM</button>
-
-				</div>
-
-				<div class="modal-footer">	
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<form action="/home" method="post" id="offer-form">
+						<div class="Request1">
+							<input type="text" class="itemtype" placeholder="Enter item" name="item" required>
+							<input type="number" class="Price" placeholder="Enter Price" name="price" required>
+							<input type="text" class="owner" placeholder="Enter Company/Recepient" name="company"
+								required>
+							<textarea message="Details" rows=5 column=50 placeholder="Enter Details / Specifications"
+								name="details">
+							</textarea>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" data-target="modal" class="btn btn-default" required>CONFIRM</button>
+							<button type="button" class="cancel" data-dismiss="modal">Cancel</button>
+						</div>
+					</form>
 				</div>
 			</div>
 
 		</div>
 	</div>
-
-
-	<!-- Modal for New Offer -->
-	<div class="modal fade" id="newOffer" role="dialog">
-			<div class="modal-dialog">
-	
-				<!-- New request content-->
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">Add New Offer</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-					<div class="modal-body">
-
-
-
-							<div class="Request1">
-					
-									<input type="number" class="itemtype" placeholder="Enter item ID" required>
-									
-									 
-									<input type="text" class="owner" placeholder="Enter Company/Recepient" required>
-									 
-									<input type="number" class="Price" placeholder="Enter Price Offer" required>
-				
-				
-									 </div>
-									
-									
-								</div>
-								<div class="modal-footer">
-				
-								<button type="submit" data-target="modal"  class="btn btn-default" required>CONFIRM</button>
-				
-								</div>
-				
-
-
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					</div>
-				</div>
-	
-			</div>
-		</div>
 
 
 	<!-- start footer Area -->
